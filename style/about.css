@@ -1,0 +1,254 @@
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    background-color: #fcefe2; /* Tông màu sáng ấm áp */
+}
+
+/* Header */
+.header {
+    background-color: #d32f2f; /* Màu đỏ chủ đạo */
+    color: #fff;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu {
+    list-style: none;
+    display: flex;
+    padding: 0;
+    margin: 0;
+}
+
+.menu li {
+    position: relative;
+}
+
+.menu li a {
+    text-decoration: none;
+    color: #fff;
+    padding: 10px 15px;
+    display: block;
+    transition: background-color 0.3s ease;
+}
+
+.menu li a:hover {
+    background-color: #ffcc00; /* Màu vàng Tết */
+    color: #d32f2f;
+}
+
+/* Submenu */
+.has-submenu .submenu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #d32f2f;
+    list-style: none;
+    padding: 10px 0;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+.has-submenu:hover .submenu {
+    display: block;
+}
+
+.submenu li a {
+    padding: 10px 20px;
+    color: #fff;
+    white-space: nowrap;
+}
+
+.submenu li a:hover {
+    background-color: #ffcc00;
+    color: #d32f2f;
+}
+
+/* Slider */
+.slider {
+    max-width: 100%;
+    overflow: hidden;
+    text-align: center;
+    background-color: #ffd54f; /* Màu vàng đậm */
+}
+
+.banner-img {
+    max-width: 100%;
+    height: auto;
+}
+/* About */
+
+.about {
+    padding: 60px 20px;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+.about h2 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.about .highlight {
+    color: #f76c6c;
+    font-weight: bold;
+}
+
+.about .intro {
+    font-size: 1.1rem;
+    color: #555;
+    margin-bottom: 40px;
+    line-height: 1.8;
+}
+
+.about-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    margin: 40px 0;
+}
+
+.about-image img {
+    max-width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.about-description {
+    text-align: left;
+    max-width: 500px;
+}
+
+.about-description p {
+    font-size: 1rem;
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.about-description .cta {
+    display: inline-block;
+    padding: 12px 25px;
+    font-size: 1rem;
+    color: #fff;
+    background-color: #f76c6c;
+    border: none;
+    border-radius: 5px;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.about-description .cta:hover {
+    background-color: #e85c5c;
+}
+
+.team {
+    margin-top: 50px;
+}
+
+.team h2 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 30px;
+}
+
+.team-grid {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.team-member {
+    text-align: center;
+    max-width: 200px;
+}
+
+.team-member img {
+    width: 100%;
+    border-radius: 50%;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 15px;
+}
+
+.team-member h3 {
+    font-size: 1.2rem;
+    color: #333;
+}
+
+.team-member p {
+    font-size: 0.9rem;
+    color: #555;
+}
+
+/* Footer */
+.footer {
+    background-color: #d32f2f;
+    color: #fff;
+    text-align: center;
+    padding: 20px 10px;
+    margin-top: 40px;
+}
+
+.footer .subnav {
+    margin-bottom: 10px;
+}
+
+.footer .subnav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.footer .subnav ul li a {
+    text-decoration: none;
+    color: #ffcc00;
+    font-size: 1em;
+}
+
+.footer .subnav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* ... (CSS cho các phần khác) ... */
+
+.about .container {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+.about .row {
+    display: flex;
+}
+
+.about .col-md-6 {
+    flex: 1;
+}
+
+.team .row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.team-member {
+    text-align: center;
+    margin: 20px;
+}
+
+.team-member img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+}
